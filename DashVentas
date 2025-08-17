@@ -1,2 +1,40 @@
-Dash de ventas hecho con una conexiond desde oracle
+1. Objetivo
+El propósito de este procedimiento es establecer una guía clara y estructurada para diseñar un dashboard avanzado en Power BI,
+utilizando como fuente de datos una base de datos Oracle. Este dashboard permitirá la integración de información crítica en tiempo real, 
+análisis dinámicos y la implementación de métricas de negocio de alto valor.
+
+2. Conexión a Oracle
+-Abrir Power BI Desktop.
+-Seleccionar Obtener datos → Base de datos Oracle.
+-Ingresar el nombre del servidor y el puerto de conexión.
+-Definir el método de autenticación (usuario/contraseña, SSO, etc.).
+-Elegir el esquema y las tablas o vistas requeridas.
+-Verificar el conector Oracle OLE DB/ODBC instalado en el equipo para garantizar compatibilidad.
+-Aplicar filtros iniciales en el editor de consultas para optimizar el rendimiento antes de cargar los datos.
+
+3. Modelado de Datos
+-Normalización: Eliminar redundancias y asegurar integridad referencial.
+-Relaciones: Definir relaciones 1:N y N:M entre tablas según el modelo de negocio.
+-Medidas DAX avanzadas:
+-álculo de KPIs dinámicos (ej. tasa de crecimiento mensual, rotación de inventario, SLA de resolución).
+-Columnas calculadas para segmentaciones personalizadas.
+-Funciones de inteligencia de tiempo (DATEADD, SAMEPERIODLASTYEAR, TOTALYTD).
+-Optimización: Deshabilitar la carga de tablas innecesarias, crear tablas de calendario y usar índices en Oracle para mejorar consultas.
+
+4. Construcción del Dashboard
+Diseño visual:
+-Tarjetas KPI con variaciones respecto a objetivos.
+-Visualizaciones
+
+6. Publicación y Distribución
+-Publicar el dashboard en el servicio de Power BI.
+-Configurar la pasarela de datos (Gateway) para garantizar la conexión continua a Oracle.
+-Definir espacios de trabajo y permisos de acceso.
+
+7. Buenas Prácticas
+-Documentar el modelo de datos y las métricas DAX implementadas.
+-Mantener consistencia visual siguiendo guías de estilo corporativas.
+-Aplicar principios de Data Storytelling para resaltar insights clave.
+-Monitorear uso y rendimiento mediante el Usage Metrics Report de Power BI Service.
+
 https://app.powerbi.com/reportEmbed?reportId=b9292c0e-6b63-4b58-aaab-d283a9ca9369&autoAuth=true&ctid=b1066a4d-f2ef-4dad-816c-810b2b0cbac0
